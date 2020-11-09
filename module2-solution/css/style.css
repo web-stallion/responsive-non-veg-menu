@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #eee;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: #ccc;
+	height: 100%;
+	width: 100%;
+	padding: 1%;
+}
+
+header h1 {
+	margin: 5% auto 2%;
+	text-transform: uppercase;
+	text-align: center;
+	color: teal;
+}
+
+main {
+	display: block;
+	width: 100%;
+}
+
+.section {
+	float: left;
+	position: relative;
+	background-color: #388282;
+	width: 31.33%;
+	max-height: 15rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: auto;
+	margin: 3% 1%;
+	padding: 1rem 1rem 2rem;
+	text-align: justify;
+	border: 2px solid #555;
+}
+
+.section h3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8rem;
+	padding: 0.3rem;
+	border-bottom: 2px solid #555;
+	border-left: 2px solid #555;
+	text-align: center;
+	color: #555;
+}
+
+.section p {
+	position: relative;
+	top: 1.5rem;
+	padding-bottom: 1rem;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+.first h3 {
+	background-color: coral;
+}
+
+.second h3 {
+	background-color: cornflowerblue;
+}
+
+.third h3 {
+	background-color: springgreen;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.first,
+	.second {
+		width: 48%;
+	}
+
+	.third {
+		clear: both;
+		width: 98%;
+	}
+}
+
+@media (min-width: 330px) and (max-width: 767px) {
+	.section {
+		width: 98%;
+	}
+}
