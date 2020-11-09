@@ -1,9 +1,13 @@
+/* RESET DEFAULTS */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	color: #eee;
 }
+
+/* CSS STYLING : BODY SECTION */
 
 body {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -13,17 +17,24 @@ body {
 	padding: 1%;
 }
 
+/* CSS STYLING : MAIN HEADING */
+
 header h1 {
 	margin: 5% auto 2%;
 	text-transform: uppercase;
 	text-align: center;
 	color: teal;
+	text-shadow: 2px 2px 5px #388282;
 }
+
+/* CSS STYLING : MAIN SECTION */
 
 main {
 	display: block;
 	width: 100%;
 }
+
+/* CSS STYLING : SECTIONS */
 
 .section {
 	float: left;
@@ -38,7 +49,10 @@ main {
 	padding: 1rem 1rem 2rem;
 	text-align: justify;
 	border: 2px solid #555;
+	box-shadow: 3px 3px 5px #388282;
 }
+
+/* CSS STYLING : SECTION HEADINGS */
 
 .section h3 {
 	position: absolute;
@@ -50,14 +64,6 @@ main {
 	border-left: 2px solid #555;
 	text-align: center;
 	color: #555;
-}
-
-.section p {
-	position: relative;
-	top: 1.5rem;
-	padding-bottom: 1rem;
-	font-size: 100%;
-	box-sizing: border-box;
 }
 
 .first h3 {
@@ -72,6 +78,37 @@ main {
 	background-color: springgreen;
 }
 
+/* CSS STYLING : SECTION CONTENT */
+
+.section p {
+	position: relative;
+	top: 1.5rem;
+	padding-bottom: 1rem;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+/* DESKTOP : MEDIA QUERY */
+
+@media (min-width: 992px) {
+	.section {
+		float: left;
+		position: relative;
+		background-color: #388282;
+		width: 31.33%;
+		max-height: 15rem;
+		box-sizing: border-box;
+		overflow: hidden;
+		height: auto;
+		margin: 3% 1%;
+		padding: 1rem 1rem 2rem;
+		text-align: justify;
+		border: 2px solid #555;
+	}
+}
+
+/* TABLET : MEDIA QUERY */
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.first,
 	.second {
@@ -84,7 +121,9 @@ main {
 	}
 }
 
-@media (min-width: 330px) and (max-width: 767px) {
+/* MOBILE : MEDIA QUERY */
+
+@media (max-width: 767px) {
 	.section {
 		width: 98%;
 	}
